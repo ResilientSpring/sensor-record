@@ -17,6 +17,7 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.PowerManager;
+import android.os.Process;
 import android.os.RemoteException;
 import android.util.Log;
 
@@ -160,7 +161,7 @@ public class SensorService extends Service implements SensorEventListener {
         magnetic = sensorManager.getDefaultSensor(MainActivity.TYPE_MAGNETIC);
 
         PowerManager manager = (PowerManager) getSystemService(Context.POWER_SERVICE);
-        wakeLock = manager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG);
+        wakeLock = manager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, TAG); //https://stackoverflow.com/questions/54004808/wakelock-tag-name-should-use-a-unique-prefix-followed-by-a-colon/55686847
 
         registerReceiver(receiver, new IntentFilter(Intent.ACTION_SCREEN_OFF));
 
