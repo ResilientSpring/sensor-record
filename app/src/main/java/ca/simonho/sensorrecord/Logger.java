@@ -1,5 +1,6 @@
 package ca.simonho.sensorrecord;
 
+
 import android.content.Context;
 import android.media.MediaScannerConnection;
 import android.util.Log;

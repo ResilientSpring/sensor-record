@@ -1,5 +1,6 @@
 package ca.simonho.sensorrecord;
 
+
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.database.SQLException;
@@ -7,17 +8,19 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Messenger;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.graphics.drawable.DrawerArrowDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.appcompat.graphics.drawable.DrawerArrowDrawable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class StartFragment extends Fragment implements View.OnClickListener {
 

@@ -1,7 +1,5 @@
 package ca.simonho.sensorrecord;
 
-import java.text.DecimalFormat;
-import java.util.LinkedList;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -20,6 +18,9 @@ import com.androidplot.xy.PointLabelFormatter;
 import com.androidplot.xy.SimpleXYSeries;
 import com.androidplot.xy.XYPlot;
 import com.androidplot.xy.XYStepMode;
+
+import java.text.DecimalFormat;
+import java.util.LinkedList;
 
 public class DynamicLinePlot
 {

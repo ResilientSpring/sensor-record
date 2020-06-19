@@ -17,8 +17,6 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.Messenger;
 import android.os.PowerManager;
-import android.os.PowerManager.WakeLock;
-import android.os.Process;
 import android.os.RemoteException;
 import android.util.Log;
 
@@ -41,7 +39,7 @@ public class SensorService extends Service implements SensorEventListener {
     private Messenger messageHandler;
 
     private SensorManager sensorManager = null;
-    private WakeLock wakeLock = null;
+    private PowerManager.WakeLock wakeLock = null;
     ExecutorService executor;
     DBHelper dbHelper;
     Sensor sensor;
